@@ -7,7 +7,9 @@ import subprocess
 def run_example(example, filename):
     image = PPMImage(512, Color(1, 1, 1, 1))
     example.run(image)
-    image.write_ppm(open(filename + '.ppm', 'w'))
+    f = open(filename + '.ppm', 'w')
+    image.write_ppm(f)
+    f.close()
     subprocess.call(["convert", filename + '.ppm', filename + '.png'])
 
 run_example(examples.e1, 'e1')
