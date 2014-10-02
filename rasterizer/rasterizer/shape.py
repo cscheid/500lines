@@ -2,10 +2,7 @@ from color import Color
 from itertools import product
 from geometry import Vector
 import random
-
-class SceneObject:
-    def draw(self, image):
-        raise NotImplementedError("Undefined method")
+from scene_object import SceneObject
 
 class Shape(SceneObject):
     def __init__(self, color=None):

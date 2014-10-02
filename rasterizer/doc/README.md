@@ -75,7 +75,8 @@ rasterizer.
 
 ## `color.py`
 
-* `Color`: Self-contained RGBA class in plain old dumb RGBA.
+* `color`: Self-contained class holding a color value in RGB together
+  with opacity information.
 
 ## `csg.py`
 

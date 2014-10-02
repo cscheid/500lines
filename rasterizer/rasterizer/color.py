@@ -7,7 +7,7 @@ class Color:
             return
         if o.a == 1.0:
             self.rgb = o.rgb
-            self.a = 1
+            self.a = 1.0
         else:
             u = 1.0 - o.a
             self.rgb = (u * self.rgb[0] + o.a * o.rgb[0],

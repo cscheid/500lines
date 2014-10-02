@@ -5,4 +5,4 @@ from color import *
 from ellipse import *
 from image import *
 from scene import *
-from csg import *
+from boolean import *
